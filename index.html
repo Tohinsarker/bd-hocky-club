@@ -44,6 +44,11 @@
             colors: {
               grays: "#b8b8b8",
               "btn-color": "#FF4240",
+              'yellow3': "rgba(253, 221, 95, 0.10)",
+              'div-color-1': "rgba(188, 237, 109, 0.10)",
+              'div-color-3': "rgba(98, 156, 243, 0.10)",
+              'primary-black': '#131318',
+              'primary-gray-color': 'rgba(19, 19, 24, 0.03)'
             },
           },
         },
@@ -531,27 +536,78 @@
      <!-- **************** dotted line end********************* -->
 
 
-     <div class="flex">
-      <div class="flex flex-col space-y-4 border w-[474px] ">
+     <div class="flex md:flex-row flex-col m-2 gap-6">
+      <div class="flex flex-col space-y-4 border md:w-[474px]  rounded-xl">
         <div class="m-8 ">
-          <div class="bg-[#f5ffe6] pt-8 pl-8 rounded">
-            <img class="w-[48px]" src="./Images/call.png" alt="">
-            <p>Phone Number:</p>
-            <h4>(+62) 123-321-543</h4>
+          <div class="bg-div-color-1 pt-8 pl-8 rounded">
+            <img class="w-[48px] pb-6" src="./Images/call.png " alt="">
+            <p class="text-grays text-base leading-8">Phone Number:</p>
+            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">(+62) 123-321-543</h4>
           </div>
         </div>
-        <div class="  ">
-          <div class="bg-[#f5ffe6] pt-8 pl-8">
-            <img src="./Images/call.png" alt="">
-            <p>Phone Number:</p>
-            <h4>(+62) 123-321-543</h4>
+        <div class="m-8 ">
+          <div class="bg-div-color-1 pt-8 pl-8 rounded">
+            <img class="w-[48px] pb-6" src="./Images/msg.png " alt="">
+            <p class="text-grays text-base leading-8">Phone Number:</p>
+            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">(+62) 123-321-543</h4>
           </div>
         </div>
+        <div class="m-8 pb-8 pt-8">
+          <div class="bg-div-color-1 pt-8 pl-8 rounded">
+            <img class="w-[48px] pb-6" src="./Images/location.png " alt="">
+            <p class="text-grays text-base leading-8">Phone Number:</p>
+            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">(+62) 123-321-543</h4>
+          </div>
+        </div>
+      
+        
       </div>
-      <div class="flex-1"></div>
+      <div class="flex-1 w-full relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <div class="">
+            <h4 class="text-primary-black text-xl font-bold pb-4">Your Name</h4>
+            <input class=" border-none text-grays p-5 bg-grays bg-primary-gray-color rounded-xl  w-full" type="text" placeholder="Enter your full name">
+          </div>
+          <div class="">
+            <h4 class="text-primary-black text-xl font-bold pb-4">Your Name</h4>
+            <input class="text-grays p-5 bg-grays bg-primary-gray-color rounded-xl  w-full" type="text" placeholder="Enter your full name">
+          </div>
+          <div class="">
+            <h4 class="text-primary-black text-xl font-bold pb-4">Your Name</h4>
+            <input class="text-grays p-5 bg-grays bg-primary-gray-color rounded-xl  w-full" type="text" placeholder="Enter your full name">
+          </div>
+          <div class="">
+            <h4 class="text-primary-black text-xl font-bold pb-4">Your Name</h4>
+            <input class="text-grays p-5 bg-grays bg-primary-gray-color rounded-xl  w-full" type="text" placeholder="Enter your full name">
+          </div>
+          <div class=" row-span-1 col-span-1 md:row-span-2 md:col-span-2">
+            <h4 class="text-primary-black text-xl font-bold pb-4">Message</h4>
+            <!-- <input class="text-grays p-5 bg-grays bg-primary-gray-color rounded-xl  w-full" type="text" placeholder="Enter your full name"> -->
+            <!-- <textarea class="p-5 " name="" id="" cols="full" rows="10" placeholder="Write your message"></textarea> -->
+            <textarea class="w-full h-40 md:h-96 p-4  bg-grays bg-primary-gray-color rounded-xl" placeholder="Write your message here"></textarea>
+          </div>
+        </div>
+        <div class="text-xl text-center py-4 rounded-xl md:absolute bottom-0 w-full bg-[#FF4240] text-white font-bold"><p class="">Send Message</p></div>
+      </div>
      </div>
       <!-- #################### Get in touch sectin end**************************** -->
+
+      <!-- *************** social media section start ##################  -->
+      <div class="container text-center w-full bg-primary-gray-color py-8 rounded mt-12">
+        <p class="font-extrabold text-2xl text-primary-black pb-6 ">Social Media</p>
+        <div class="space-x-4">
+          <span class="text-2xl"><i class="fa-brands fa-twitter"></i></span>
+          <span class="text-2xl"><i class="fa-brands fa-facebook"></i></span>
+          <span class="text-2xl"><i class="fa-brands fa-instagram"></i></span>
+          <span class="text-2xl"><i class="fa-brands fa-github"></i></span>
+          <span class="text-2xl"><i class="fa-brands fa-telegram"></i></span>
+        </div>
+      </div>
+      <!-- *************** social media section end ##################  -->
     </main>
     <!-- ****************** main section end**************************** -->
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%% footer section start **************************  -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%% footer section end **************************  -->
   </body>
 </html>
