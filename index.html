@@ -62,7 +62,7 @@
     </style>
   </head>
   <body class="">
-    <header class="container mx-auto">
+    <header class="container mx-auto mb-4">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -71,15 +71,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
               </div>
               <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
+                <li class="text-red-600"><a>Home</a></li>
+              
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
               </ul>
             </div>
             <p class=" text-2xl font-extrabold text-primary-black">Hockey<span class="text-red-500">’</span>s</p>
@@ -95,14 +92,7 @@
             </ul>
           </div>
           <div class="navbar-end items-center">
-            <div class="form-control flex items-bottom">
-              <div class="input-group">
-                <input type="text" placeholder="Search…" class="input input-bordered" />
-                <button class="btn btn-square">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button>
-              </div>
-            </div>
+            <span class="text-3xl font-bold pr-4 text-grays hidden md:block"><i class="fa-solid fa-magnifying-glass"></i></span>
             <a class="btn bg-btn-color text-white font-extrabold text-2xl">Get Ticket</a>
           </div>
         </div>
@@ -124,6 +114,11 @@
               class="btn btn-circle bg-black text-white border-none text-2xl"
               >❯</a
             >
+          </div>
+          <div class="absolute bg-black p-8 hidden lg:block text-left w-[550px] rounded bottom-8 right-8">
+            <h3 class="text-bold text-base text-white pb-2">Meet all the heros from the field</h3>
+            <p class="text-grays text-sm">Home training and matches take place at either Kings School or at Winchester Sports Stadium at Bar End.
+              Please navigate the site for updates and general information or for more information contact us.</p>
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
@@ -158,8 +153,16 @@
             >
           </div>
         </div>
+        <!-- ***************** bonus div secion ##################  -->
+      
+        <!-- ***************** bonus div secion ##################  -->
       </div>
       <!-- ******************* slider end**************** -->
+      <div class="absolute bg-black mt-4 lg:mt-0 p-8 text-left w-4/1 container mx-auto lg:w-[550px] rounded lg:bottom-8 lg:right-8 lg:hidden block">
+        <h3 class="text-bold text-base text-white pb-2">Meet all the heros from the field</h3>
+        <p class="text-grays text-semibold text-sm">Home training and matches take place at either Kings School or at Winchester Sports Stadium at Bar End.
+          Please navigate the site for updates and general information or for more information contact us.</p>
+      </div>
     </header>
 
     <!-- ****************** main section start**************************** -->
@@ -170,12 +173,10 @@
       ></div>
       <!-- **************** dotted line end********************* -->
       <!-- ************** Professional hocky club  content********************** -->
-      <div class="text-center mt-8">
+      <div class="text-center mt-8 ">
         <h3 class="text-4xl font-bold">Professional Hockeys Club</h3>
         <p class="text-grays pt-6">
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
-          placerat <br />
-          dolor. Purus urna in sit nullam proin.
+          Our  hockey programmes are currently full on - <br> please see the Junior Section page for more information and get involved - #HappyHotTubs.
         </p>
       </div>
 
@@ -187,7 +188,7 @@
       <div
         class="flex flex-col md:flex-row items-center gap-12 md:gap-32 md:justify-center md:my-24"
       >
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col  text-center items-center justify-center">
           <div
             class="radial-progress text-red-500"
             style="--value: 90"
@@ -197,65 +198,63 @@
           </div>
           <h2 class="text-xl font-semibold pt-6 pb-4">Prayer Facility</h2>
           <p>
-            Lorem ipsum dolor, sit amet <br />
-            consectetur adipisicing elit. ?
+            You can get prayer facility <br />
+            from us any time
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col text-center items-center justify-center">
           <div
-            class="radial-progress text-red-500"
+            class="radial-progress text-[#49D293]"
             style="--value: 90"
             role="progressbar"
           >
-            <span class="text-black font-extrabold text-xl flex">90%</span>
+            <span class="text-black text-center font-extrabold text-xl flex">90%</span>
           </div>
-          <h2 class="text-xl font-semibold pt-6 pb-4">Prayer Facility</h2>
+          <h2 class="text-xl font-semibold pt-6 pb-4">Experienced Coach</h2>
           <p>
-            Lorem ipsum dolor, sit amet <br />
-            consectetur adipisicing elit. ?
+            All of our coach are height experienced <br />
+          you can get better train from them
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col text-center items-center justify-center">
           <div
-            class="radial-progress text-red-500"
+            class="radial-progress text-[#E7E7E8]"
             style="--value: 90"
             role="progressbar"
           >
             <span class="text-black font-extrabold text-xl flex">90%</span>
           </div>
-          <h2 class="text-xl font-semibold pt-6 pb-4">Prayer Facility</h2>
+          <h2 class="text-xl font-semibold pt-6 pb-4">Senior Player</h2>
           <p>
-            Lorem ipsum dolor, sit amet <br />
-            consectetur adipisicing elit. ?
+            Senior Player are very helpful  <br />
+            They can help you for better playing
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center text-center justify-center">
           <div
-            class="radial-progress text-red-500"
+            class="radial-progress text-[#4C8DF1]"
             style="--value: 90"
             role="progressbar"
           >
             <span class="text-black font-extrabold text-xl flex">90%</span>
           </div>
-          <h2 class="text-xl font-semibold pt-6 pb-4">Prayer Facility</h2>
+          <h2 class="text-xl font-semibold pt-6 pb-4">Training Ground</h2>
           <p>
-            Lorem ipsum dolor, sit amet <br />
-            consectetur adipisicing elit. ?
+            Our trainging ground are so much beautiful <br />
+            you will enjoy
           </p>
         </div>
       </div>
 
       <!-- ***************** program section ********************** -->
 
-      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
         <div
           class="bg-bannerimg rounded-xl bg-cover md:px-10 md:pt-24 px-10 pt-24"
         >
           <h class="text-white text-3xl font-extrabold">Junior Program</h>
           <p class="text-white leading-6 pt-6">
-            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
-            morbi nulla. Tortor congue sed et in.
+            Germany trumped France in the final of the FIH Men's Junior Hockey World Cup 2023 in Kuala Lumpur, Malaysia, for their seventh title while Spain and the Indian hockey team finished third and fourth, respectively.
           </p>
           <button
             class="bg-btn-color py-3 px-8 text-center text-white font-semibold text-xl rounded-xl mt-8 mb-10"
@@ -266,9 +265,7 @@
         <div class="bg-bannerimg3 rounded-xl bg-cover px-10 pt-24">
           <h class="text-white text-3xl font-extrabold">Teenager Program</h>
           <p class="text-white leading-6 pt-4">
-            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
-            morbi nulla. Tortor congue sed et in.
+            Kids that start hockey before they are physically and mentally ready are more likely to have a negative experience. It is never too late to start playing hockey.
           </p>
           <button
             class="bg-btn-color py-3 px-8 text-center text-white font-semibold text-xl rounded-xl mt-8 mb-8"
@@ -282,9 +279,7 @@
         >
           <h2 class="text-3xl text-white font-bold">Professional Program</h2>
           <p class="text-white text-base font-semibold leading-6 pt-4">
-            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
-            morbi nulla. Tortor congue sed et in.
+            Physical and mental toughness is a basic prerequisite for a professional hockey player at any level. Hockey is a contact sport, with occasional bone-crunching checks and regular faceoffs, and professional hockey players have to be able to take as well as dish out hit
           </p>
           <button
             class="bg-btn-color py-3 px-8 text-center text-white font-semibold text-xl rounded-xl mt-8 mb-8"
@@ -296,7 +291,7 @@
 
       <!-- **************** dotted line start********************* -->
       <div
-        class="container mx-auto border-dashed border rounded-md mt-44 mb-8"
+        class="container mx-auto border-dashed border rounded-md mt-24 mb-8"
       ></div>
       <!-- **************** dotted line end********************* -->
 
@@ -342,8 +337,8 @@
                   >
                 </div>
               </div>
-              <h3 class="text-xl font-bold">World Cup Flags Football</h3>
-              <p class="text-base font-medium leading-6 text-grays">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+              <h3 class="text-xl font-bold">World Cup Jourcy</h3>
+              <p class="text-base font-medium leading-6 text-grays">it is 2024 world cup hockey jourcy </p>
               <div class="flex space-x-5 pt-2 text-grays">
                 <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $22.00</p>
                 <p>
@@ -355,7 +350,47 @@
           </div>
           <div class="flex md:flex-row flex-col gap-5 space-y-5 border rounded-xl p-6">
             <div>
-              <img class="w-full h-full" src="./Images/5.png" alt="" srcset="" />
+              <img class="w-full h-full" src="./Images/6.png" alt="" srcset="" />
+            </div>
+            <div class="space-y-3 ">
+              <div class="flex space-x-4 items-end">
+                <div class=" space-x-2">
+                  <span
+                    ><i class="fa-regular fa-star text-[#F99808] pr-2 text-2xl"></i
+                    ><span class="text-base font-medium text-grays"
+                      >4.5</span
+                    ></span
+                  >
+                </div>
+                <div>
+                  <span class="text-grays space-x-2">
+                    <i class="fa-regular fa-eye text-2xl"></i>
+                    <span class="text-base font-medium text-base"
+                      >4.0</span
+                    ></span
+                  >
+                </div>
+                <div class="text-grays space-x-2">
+                  <span "
+                    ><i class="fa-regular fa-heart pr-2 text-2xl"></i
+                    ><span class="text-grays text-base">200</span></span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold">World Cup Flags Football</h3>
+              <p class="text-base font-medium leading-6 text-grays">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+              <div class="flex space-x-5 pt-2 text-grays">
+                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $50.00</p>
+                <p>
+                  <span> <i class="fa-solid fa-cart-shopping"></i></span>
+                  Delivery Fee: Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:flex-row flex-col gap-5 space-y-5 border rounded-xl p-6">
+            <div>
+              <img class="w-full h-full" src="./Images/7.png" alt="" srcset="" />
             </div>
             <div class="space-y-3 ">
               <div class="flex space-x-4 items-end">
@@ -382,10 +417,10 @@
                   >
                 </div>
               </div>
-              <h3 class="text-xl font-bold">World Cup Flags Football</h3>
-              <p class="text-base font-medium leading-6 text-grays">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+              <h3 class="text-xl font-bold">World Cup Cap</h3>
+              <p class="text-base font-medium leading-6 text-grays">This is our new product of hocky world cap </p>
               <div class="flex space-x-5 pt-2 text-grays">
-                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $22.00</p>
+                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $10.00</p>
                 <p>
                   <span> <i class="fa-solid fa-cart-shopping"></i></span>
                   Delivery Fee: Free
@@ -395,7 +430,47 @@
           </div>
           <div class="flex md:flex-row flex-col gap-5 space-y-5 border rounded-xl p-6">
             <div>
-              <img class="w-full h-full" src="./Images/5.png" alt="" srcset="" />
+              <img class="w-full h-full" src="./Images/8.png" alt="" srcset="" />
+            </div>
+            <div class="space-y-3 ">
+              <div class="flex space-x-4 items-end">
+                <div class=" space-x-2">
+                  <span
+                    ><i class="fa-regular fa-star text-[#F99808] pr-2 text-2xl"></i
+                    ><span class="text-base font-medium text-grays"
+                      >3.0</span
+                    ></span
+                  >
+                </div>
+                <div>
+                  <span class="text-grays space-x-2">
+                    <i class="fa-regular fa-eye text-2xl"></i>
+                    <span class="text-base font-medium text-base"
+                      >4.0</span
+                    ></span
+                  >
+                </div>
+                <div class="text-grays space-x-2">
+                  <span "
+                    ><i class="fa-regular fa-heart pr-2 text-2xl"></i
+                    ><span class="text-grays text-base">250</span></span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold">World Cup new Jourcy</h3>
+              <p class="text-base font-medium leading-6 text-grays">We are exiciting us <br> our brand new prodcut jourcy</p>
+              <div class="flex space-x-5 pt-2 text-grays">
+                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $15.00</p>
+                <p>
+                  <span> <i class="fa-solid fa-cart-shopping"></i></span>
+                  Delivery Fee: $5
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:flex-row flex-col gap-5 space-y-5 border rounded-xl p-6">
+            <div>
+              <img class="w-full h-full" src="./Images/9.png" alt="" srcset="" />
             </div>
             <div class="space-y-3 ">
               <div class="flex space-x-4 items-end">
@@ -422,10 +497,10 @@
                   >
                 </div>
               </div>
-              <h3 class="text-xl font-bold">World Cup Flags Football</h3>
-              <p class="text-base font-medium leading-6 text-grays">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+              <h3 class="text-xl font-bold">World Cup Helmet</h3>
+              <p class="text-base font-medium leading-6 text-grays">It is stronger and better <br> your r safe always</p>
               <div class="flex space-x-5 pt-2 text-grays">
-                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $22.00</p>
+                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $30.00</p>
                 <p>
                   <span> <i class="fa-solid fa-cart-shopping"></i></span>
                   Delivery Fee: Free
@@ -435,7 +510,7 @@
           </div>
           <div class="flex md:flex-row flex-col gap-5 space-y-5 border rounded-xl p-6">
             <div>
-              <img class="w-full h-full" src="./Images/5.png" alt="" srcset="" />
+              <img class="w-full h-full" src="./Images/10.png" alt="" srcset="" />
             </div>
             <div class="space-y-3 ">
               <div class="flex space-x-4 items-end">
@@ -462,93 +537,13 @@
                   >
                 </div>
               </div>
-              <h3 class="text-xl font-bold">World Cup Flags Football</h3>
-              <p class="text-base font-medium leading-6 text-grays">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+              <h3 class="text-xl font-bold">World Cup New Football</h3>
+              <p class="text-base font-medium leading-6 text-grays">New football is coming <br> you can get from us</p>
               <div class="flex space-x-5 pt-2 text-grays">
-                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $22.00</p>
+                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $25.00</p>
                 <p>
                   <span> <i class="fa-solid fa-cart-shopping"></i></span>
-                  Delivery Fee: Free
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex md:flex-row flex-col gap-5 space-y-5 border rounded-xl p-6">
-            <div>
-              <img class="w-full h-full" src="./Images/5.png" alt="" srcset="" />
-            </div>
-            <div class="space-y-3 ">
-              <div class="flex space-x-4 items-end">
-                <div class=" space-x-2">
-                  <span
-                    ><i class="fa-regular fa-star text-[#F99808] pr-2 text-2xl"></i
-                    ><span class="text-base font-medium text-grays"
-                      >5.0</span
-                    ></span
-                  >
-                </div>
-                <div>
-                  <span class="text-grays space-x-2">
-                    <i class="fa-regular fa-eye text-2xl"></i>
-                    <span class="text-base font-medium text-base"
-                      >5.0</span
-                    ></span
-                  >
-                </div>
-                <div class="text-grays space-x-2">
-                  <span "
-                    ><i class="fa-regular fa-heart pr-2 text-2xl"></i
-                    ><span class="text-grays text-base">300</span></span
-                  >
-                </div>
-              </div>
-              <h3 class="text-xl font-bold">World Cup Flags Football</h3>
-              <p class="text-base font-medium leading-6 text-grays">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
-              <div class="flex space-x-5 pt-2 text-grays">
-                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $22.00</p>
-                <p>
-                  <span> <i class="fa-solid fa-cart-shopping"></i></span>
-                  Delivery Fee: Free
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex md:flex-row flex-col gap-5 space-y-5 border rounded-xl p-6">
-            <div>
-              <img class="w-full h-full" src="./Images/5.png" alt="" srcset="" />
-            </div>
-            <div class="space-y-3 ">
-              <div class="flex space-x-4 items-end">
-                <div class=" space-x-2">
-                  <span
-                    ><i class="fa-regular fa-star text-[#F99808] pr-2 text-2xl"></i
-                    ><span class="text-base font-medium text-grays"
-                      >5.0</span
-                    ></span
-                  >
-                </div>
-                <div>
-                  <span class="text-grays space-x-2">
-                    <i class="fa-regular fa-eye text-2xl"></i>
-                    <span class="text-base font-medium text-base"
-                      >5.0</span
-                    ></span
-                  >
-                </div>
-                <div class="text-grays space-x-2">
-                  <span "
-                    ><i class="fa-regular fa-heart pr-2 text-2xl"></i
-                    ><span class="text-grays text-base">300</span></span
-                  >
-                </div>
-              </div>
-              <h3 class="text-xl font-bold">World Cup Flags Football</h3>
-              <p class="text-base font-medium leading-6 text-grays">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
-              <div class="flex space-x-5 pt-2 text-grays">
-                <p class="text-xl font-extrabold left-6 text-[#FF4240]">Price - $22.00</p>
-                <p>
-                  <span> <i class="fa-solid fa-cart-shopping"></i></span>
-                  Delivery Fee: Free
+                  Delivery Fee: $3
                 </p>
               </div>
             </div>
@@ -569,9 +564,7 @@
       <div class="text-center">
         <h2 class="text-4xl font-extrabold">Clients Question</h2>
         <p class="text-grays leading-6 font-semibold pt-6">
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-          turpis placerat <br />
-          dolor. Purus urna in sit nullam proin.
+          Hey dear, We are always open for u, feel fre to ask any question
         </p>
       </div>
 
@@ -588,7 +581,7 @@
                 Our Equipment
               </div>
               <div class="collapse-content"> 
-                <p>hello</p>
+                <p>Equipment are new and strong</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border border-base-300">
@@ -597,7 +590,7 @@
                 Hockey Training
               </div>
               <div class="collapse-content"> 
-                <p>hello</p>
+                <p>12 month hockey training is open</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border border-base-300">
@@ -606,7 +599,7 @@
                 Private Lessons
               </div>
               <div class="collapse-content"> 
-                <p>hello</p>
+                <p>you can get private lession</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border border-base-300">
@@ -615,7 +608,7 @@
                 Ski Touring
               </div>
               <div class="collapse-content"> 
-                <p>hello</p>
+                <p>yes, you cand do it</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border border-base-300">
@@ -624,7 +617,7 @@
                 Booking
               </div>
               <div class="collapse-content"> 
-                <p>hello</p>
+                <p>Advanced booking is always open</p>
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border border-base-300">
@@ -633,7 +626,7 @@
                 Pricings
               </div>
               <div class="collapse-content"> 
-                <p>hello</p>
+                <p>Price is chep and your can get discount</p>
               </div>
             </div>
           </div>
@@ -654,9 +647,8 @@
       <div class="text-center">
         <h2 class="text-4xl font-extrabold">Get In Touch</h2>
         <p class="text-grays leading-6 font-semibold pt-6">
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-          turpis placerat <br />
-          dolor. Purus urna in sit nullam proin.
+          We are always open. any time you can come our office <br />
+          Just ask any question u will get answer within 5 minutes
         </p>
       </div>
        <!-- **************** dotted line start********************* -->
@@ -672,21 +664,21 @@
           <div class="bg-div-color-1 pt-8 pl-8 rounded">
             <img class="w-[48px] pb-6" src="./Images/call.png " alt="">
             <p class="text-grays text-base leading-8">Phone Number:</p>
-            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">(+62) 123-321-543</h4>
+            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">(+62) 650-321-843</h4>
           </div>
         </div>
         <div class="m-8 ">
           <div class="bg-div-color-1 pt-8 pl-8 rounded">
             <img class="w-[48px] pb-6" src="./Images/msg.png " alt="">
-            <p class="text-grays text-base leading-8">Phone Number:</p>
-            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">(+62) 123-321-543</h4>
+            <p class="text-grays text-base leading-8">Message:</p>
+            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">Want to know anything just msg us</h4>
           </div>
         </div>
         <div class="m-8 pb-8 pt-8">
           <div class="bg-div-color-1 pt-8 pl-8 rounded">
             <img class="w-[48px] pb-6" src="./Images/location.png " alt="">
-            <p class="text-grays text-base leading-8">Phone Number:</p>
-            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">(+62) 123-321-543</h4>
+            <p class="text-grays text-base leading-8">Location</p>
+            <h4 class="text-xl font-extrabold leading-8 text-[#131318] pb-12">Google map is here</h4>
           </div>
         </div>
       
@@ -742,7 +734,9 @@
       
         <div class="space-y-2 text-center lg:text-left  row-span-2 col-span-2">
           <p class="font-extrabold text-xl text-white">Get In Touch</p> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Tempore libero consequatur harum ipsa perspiciatis quod magn <br> i dignissimos voluptas velit repellat.</p>
+          <p>Uttara, Dhaka-1212.
+            Pitch 1 <br> address: Kings School, Kings Road, Winchester, Hampshire. SO22 5PN
+            Club contacts</p>
           <div><span class="text-red-600 text-2xl pr-2"> <i class="fa-regular fa-envelope"></i></span> <span class="text-base ">bd.hocky.club@gmail.com</span></div>
           <div><span class="text-red-600 text-2xl pr-2"> <i class="fa-solid fa-phone"></i></span> <span class="text-base">(+62) 123-321-987</span></div>
 
